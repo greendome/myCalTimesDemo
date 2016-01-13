@@ -1,0 +1,32 @@
+<ion-view title="Daily Meeting Times">
+    <ion-content ng-controller="dailyMeetingTimesCtrl" class="has-header" overflow-scroll="true" padding="true">
+		<ion-list>
+		 <ion-item ng-repeat="time in times" class="item-text-wrap">
+   			AA Username: <br>
+ 			
+ 		  </ion-item>
+				
+		  <!-- <ion-item ng-repeat="post in posts" class="item-text-wrap">
+   			AA Username: {{ post.username }}<br>
+ 			AA Name: {{ post.name }}<br>
+ 			AA Email: {{ post.email }}<br>
+ 			AA Website: {{ post.website }}<br>
+ 			AA Street: {{ post.address.street }}<br>
+ 		  </ion-item> -->
+ 		  
+		  <ion-item class="item-text-wrap">
+
+		  </ion-item>
+		  <ion-item ng-repeat="user in users" class="item-text-wrap">
+   			Username: {{ user.username }}<br>
+ 			Name: {{ user.name }}<br>
+ 			Email: {{ user.email }}<br>
+ 			Website: {{ user.website }}<br>
+ 			Street: {{ user.address.street }}<br>
+ 		  </ion-item>
+
+		</ion-list>
+    
+    </ion-content>
+</ion-view>
+
